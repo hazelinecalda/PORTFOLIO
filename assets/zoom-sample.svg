@@ -1,0 +1,69 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Zoom sample work</title>
+  <desc id="desc">A meeting screen showing a live Zoom call with a portrait tile and text conversation transcript.</desc>
+  <defs>
+    <linearGradient id="bgDark" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d0d10"/>
+      <stop offset="100%" stop-color="#1a1d20"/>
+    </linearGradient>
+    <linearGradient id="panelGreen" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0d4c46"/>
+      <stop offset="100%" stop-color="#0a403c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgDark)"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#1b1d1f"/>
+  <text x="30" y="45" fill="#f4f4f4" font-family="Arial, sans-serif" font-size="28" font-weight="700">zoom</text>
+  <text x="190" y="44" fill="#a7afb8" font-family="Arial, sans-serif" font-size="18" font-weight="700">Workspace</text>
+  <text x="410" y="44" fill="#d8e6eb" font-family="Arial, sans-serif" font-size="18" font-weight="700">EXPO LINK</text>
+
+  <g>
+    <rect x="152" y="92" width="700" height="220" rx="12" fill="#0d1218"/>
+    <rect x="165" y="100" width="260" height="150" rx="8" fill="#f3f3f1"/>
+    <circle cx="236" cy="173" r="45" fill="#f0cfba"/>
+    <path d="M195 170 C205 119, 260 104, 292 143 C304 159, 304 186, 298 208 C286 210, 271 214, 258 214 C220 214, 205 199, 195 170 Z" fill="#2d241f"/>
+    <path d="M212 160 C235 146, 262 144, 278 166" stroke="#ab6b53" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <circle cx="222" cy="168" r="7" fill="#2a241f"/>
+    <circle cx="269" cy="168" r="7" fill="#2a241f"/>
+    <circle cx="223" cy="168" r="3" fill="#fff"/>
+    <circle cx="270" cy="168" r="3" fill="#fff"/>
+    <rect x="180" y="205" width="120" height="28" rx="10" fill="#e8e9e7"/>
+    <text x="194" y="225" fill="#1d1d1d" font-family="Arial, sans-serif" font-size="16" font-weight="700">Hazel Calda</text>
+
+    <rect x="0" y="0" width="1280" height="720" fill="none" stroke="#fff" opacity="0.06"/>
+  </g>
+
+  <g opacity="0.85">
+    <rect x="146" y="278" width="770" height="150" fill="#19262a"/>
+    <rect x="179" y="310" width="190" height="66" fill="#f4f2ef" rx="10"/>
+    <rect x="390" y="310" width="170" height="66" fill="#f4f2ef" rx="10"/>
+    <rect x="580" y="310" width="160" height="66" fill="#f4f2ef" rx="10"/>
+    <rect x="760" y="310" width="120" height="66" fill="#f4f2ef" rx="10"/>
+    <rect x="180" y="390" width="120" height="24" fill="#1a1a1a" opacity="0.68"/>
+    <rect x="330" y="390" width="100" height="24" fill="#1a1a1a" opacity="0.68"/>
+  </g>
+
+  <g>
+    <rect x="144" y="450" width="812" height="210" fill="url(#panelGreen)"/>
+    <circle cx="192" cy="520" r="18" fill="#0c7d67"/>
+    <text x="220" y="528" fill="#f3fbf9" font-family="Arial, sans-serif" font-size="26" font-weight="700">Austin SBE 2026</text>
+
+    <text x="194" y="572" fill="#f3fbf9" font-family="Arial, sans-serif" font-size="30" font-weight="700">The comm, C-H-U-M-E-F-E-C-T.com.</text>
+
+    <circle cx="194" cy="620" r="18" fill="#0c7d67"/>
+    <text x="220" y="628" fill="#f3fbf9" font-family="Arial, sans-serif" font-size="26" font-weight="700">Hazel Calda</text>
+    <text x="194" y="660" fill="#f3fbf9" font-family="Arial, sans-serif" font-size="24">dot com. Okay, perfect, I got it here.</text>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="1010" y="86" width="220" height="520" fill="#171b1f"/>
+    <text x="1048" y="146" fill="#f5f7f8" font-family="Arial, sans-serif" font-size="26" font-weight="700">Everyone</text>
+    <rect x="1036" y="180" width="170" height="40" fill="#1d2328" rx="20"/>
+    <text x="1062" y="208" fill="#eef8fb" font-family="Arial, sans-serif" font-size="20">Janine Falco</text>
+    <circle cx="1060" cy="250" r="12" fill="#2ab07d"/>
+    <text x="1082" y="258" fill="#f1f2f3" font-family="Arial, sans-serif" font-size="18">Janine</text>
+    <circle cx="1082" cy="290" r="12" fill="#2ab07d"/>
+    <text x="1104" y="298" fill="#f1f2f3" font-family="Arial, sans-serif" font-size="18">Janine</text>
+  </g>
+</svg>
