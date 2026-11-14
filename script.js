@@ -27,34 +27,36 @@ if (glow && window.matchMedia("(pointer:fine)").matches) {
   }, { passive: true });
 }
 
-// Display the photos uploaded by Hazeline in the portfolio.
-const hero = document.querySelector(".hero");
-const heroCopy = hero?.querySelector(".hero-copy");
-if (hero && heroCopy) {
-  const portrait = document.createElement("img");
-  portrait.className = "profile-photo-attachment reveal";
-  portrait.src = "PHOTO-Calda-Hazeline.jpg";
-  portrait.alt = "Hazeline Calda, profile portrait";
-  heroCopy.insertAdjacentElement("afterend", portrait);
-  observer.observe(portrait);
-}
+// Use the uploaded portrait in the existing CH/brand logo marks.
+document.querySelectorAll(".brand-mark").forEach(mark => {
+  const logoPortrait = document.createElement("img");
+  logoPortrait.src = "PHOTO-Calda-Hazeline.jpg";
+  logoPortrait.alt = "";
+  logoPortrait.setAttribute("aria-hidden", "true");
+  mark.replaceChildren(logoPortrait);
+});
 
-const sampleWorkImage = document.querySelector(".sample-image img");
-if (sampleWorkImage) {
-  sampleWorkImage.src = "sample%20work.png";
-  sampleWorkImage.alt = "Zoom meeting screenshot showing Hazeline Calda's appointment-setting sample work";
-  sampleWorkImage.style.display = "block";
-  sampleWorkImage.parentElement.classList.remove("image-fallback");
+// Keep the full uploaded sample screenshot visible without cropping any details.
+const sampleImage = document.querySelector(".sample-image img");
+const sampleFrame = document.querySelector(".sample-image");
+if (sampleImage && sampleFrame) {
+  sampleImage.src = "sample%20work.png";
+  sampleImage.alt = "Full screenshot of Hazeline Calda's Zoom sample work";
+  sampleImage.style.cssText = "display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;";
+  sampleFrame.style.height = "auto";
+  sampleFrame.style.minHeight = "0";
+  sampleFrame.style.aspectRatio = "auto";
+  sampleFrame.style.overflow = "visible";
+  sampleImage.addEventListener("error", () => {
+    sampleFrame.classList.add("image-fallback");
+  });
 }
 
 const imageStyles = document.createElement("style");
 imageStyles.textContent = `
-.hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(220px, .65fr); align-items: center; column-gap: clamp(2rem, 6vw, 6rem); position: relative; }
-.hero-topline, .hero-marquee { grid-column: 1 / -1; }
-.hero-copy { grid-column: 1; grid-row: 2; }
-.profile-photo-attachment { grid-column: 2; grid-row: 2; display: block; width: min(100%, 360px); aspect-ratio: 4 / 5; height: auto; object-fit: cover; object-position: center 28%; justify-self: center; border-radius: 24px; border: 1px solid rgba(255,255,255,.16); box-shadow: 0 24px 70px rgba(0,0,0,.4); }
-.sample-image img { width: 100%; height: 100%; object-fit: cover; }
-@media (max-width: 800px) { .hero { grid-template-columns: 1fr; } .hero-topline, .hero-copy, .profile-photo-attachment, .hero-marquee { grid-column: 1; } .hero-topline { grid-row: 1; } .hero-copy { grid-row: 2; } .profile-photo-attachment { grid-row: 3; width: min(72vw, 300px); margin: 1.5rem auto; } .hero-marquee { grid-row: 4; } }
+.brand-mark { display: inline-flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 50%; }
+.brand-mark img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 20%; }
+.sample-image img { display: block; width: 100%; height: auto; max-height: none; object-fit: contain; }
 `;
 document.head.appendChild(imageStyles);
 
