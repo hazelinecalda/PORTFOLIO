@@ -1,0 +1,59 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Hazeline Calda portrait</title>
+  <desc id="desc">A stylized portrait of Hazeline Calda with dark brown hair, warm skin tone, and a soft smile.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f1ee"/>
+      <stop offset="100%" stop-color="#ebebea"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f1ef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="400" cy="910" rx="260" ry="90" fill="#d8d4d0" opacity="0.8"/>
+
+  <path d="M180 760 L620 760 L620 1000 L180 1000 Z" fill="url(#shirt)"/>
+  <path d="M250 760 L550 760 L520 1000 L280 1000 Z" fill="#f7f7f6" opacity="0.85"/>
+
+  <path d="M250 420 C250 266, 307 165, 403 152 C517 137, 586 225, 615 366 C630 439, 616 547, 573 610 C529 674, 472 717, 409 726 C304 689, 261 587, 250 420 Z" fill="#f3d0ba"/>
+
+  <path d="M244 423 C242 249, 305 100, 415 87 C512 75, 599 146, 632 293 C646 363, 642 434, 612 491 C575 560, 524 610, 440 628 C368 606, 286 578, 259 528 C247 504, 245 474, 244 423 Z" fill="#2e241f"/>
+  <path d="M287 377 C287 286, 344 208, 433 200 C516 192, 577 245, 597 330 C612 395, 607 445, 564 485 C528 522, 472 538, 414 541 C345 544, 294 514, 280 456 C274 432, 272 401, 287 377 Z" fill="#2d221d"/>
+
+  <path d="M350 383 C363 374, 389 371, 414 374 C448 378, 479 389, 499 414 C485 469, 477 497, 437 509 C395 522, 327 514, 306 475 C303 447, 312 421, 350 383 Z" fill="#f7d9c5"/>
+
+  <ellipse cx="355" cy="448" rx="28" ry="19" fill="#fff"/>
+  <ellipse cx="474" cy="448" rx="28" ry="19" fill="#fff"/>
+  <ellipse cx="355" cy="451" rx="12" ry="15" fill="#2d261f"/>
+  <ellipse cx="474" cy="451" rx="12" ry="15" fill="#2d261f"/>
+  <circle cx="358" cy="446" r="4" fill="#fff"/>
+  <circle cx="477" cy="446" r="4" fill="#fff"/>
+
+  <path d="M360 431 C379 424, 390 423, 404 431" stroke="#a8735d" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M402 431 C418 424, 438 425, 456 436" stroke="#a8735d" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <path d="M305 557 C343 582, 372 594, 413 596 C453 596, 475 584, 505 558 C484 616, 438 645, 358 644 C324 642, 303 621, 305 557 Z" fill="#ef998c"/>
+  <path d="M314 552 C347 579, 381 590, 421 588 C448 586, 472 575, 493 556" stroke="#a85d4f" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <path d="M258 370 C274 278, 332 214, 399 188 C322 203, 278 259, 258 370 Z" fill="#2f221d"/>
+  <path d="M548 370 C532 278, 474 214, 407 188 C484 203, 528 259, 548 370 Z" fill="#2f221d"/>
+
+  <path d="M310 620 C347 629, 364 632, 392 635 C420 632, 454 626, 484 620" stroke="#eb7a62" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M330 601 C351 613, 370 620, 392 621 C414 620, 431 613, 453 602" stroke="#f7c7b8" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <g fill="none" stroke="#828a93" stroke-width="5" stroke-linecap="round">
+    <path d="M293 628 L310 638"/>
+    <path d="M311 638 L328 640"/>
+    <path d="M329 640 L345 638"/>
+    <path d="M346 638 L364 635"/>
+    <path d="M365 635 L384 636"/>
+    <path d="M385 636 L404 638"/>
+    <path d="M405 638 L421 637"/>
+    <path d="M422 637 L444 640"/>
+    <path d="M445 640 L462 639"/>
+    <path d="M463 639 L481 627"/>
+  </g>
+</svg>
